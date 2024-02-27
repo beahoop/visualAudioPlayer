@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Visual Challenge</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="controls">
+      <div id="colorControls">
+        <div id="box">
+          <input type="range" id="redSlider" min="0" max="255" step="1" defaultValue="0">
+          <label for="redSlider">Red</label>
+        </div>
+        <div id="box">
+          <input type="range" id="greenSlider" min="0" max="255" step="1" defaultValue="0">
+          <label for="greenSlider">Green</label>
+        </div>
+        <div id="box">
+          <input type="range" id="blueSlider" min="0" max="255" step="1" defaultValue="0">
+          <label for="blueSlider">Blue</label>
+        </div>
+        <div id="box">
+          <input type="range" id="heightSlider" min="0" max="10" step="1" defaultValue="0">
+          <label id="height" for="heightSlider">Height</label>
+        </div>
+      </div>
+      <audio id="audio1" controls></audio>
+    </div>
+
+    <div id="container">
+      <div id="box">
+        <button id="clickMe">Click me</button>
+      </div>
+      
+      <canvas id="canvas1"></canvas>
+    </div>
+  
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>
